@@ -11,7 +11,32 @@
   "main": "dist/cjs/index.cjs",
   "module": "dist/index.js",
   "exports": {
+    ".": {{
+  "name": "@uniswap/widgets",
+  "version": "1.0.7",
+  "description": "Uniswap Interface",
+  "homepage": ".",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.cjs",
+  "module": "dist/index.js",
+  "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.cjs"
+    },
+    "./locales/*": {
+      "import": "./dist/locales/*.js",
+      "require": "./dist/cjs/locales/*.cjs"
+    },
+    "./fonts.css": {
+      "import": "./dist/fonts.css",
+      "require": "./dist/fonts.css"
+    }
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/cjs/index.cjs"
